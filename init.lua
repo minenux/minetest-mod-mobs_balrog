@@ -41,8 +41,20 @@
 
 -- Used for localization
 
-local S = minetest.get_translator("mobs_balrog")
-
+local S, NS
+if minetest.get_translator ~= nil then
+    S = minetest.get_translator(core.get_current_modname())
+else
+    if minetest.get_modpath("intllib") then
+        local MP = minetest.get_modpath("intllib")
+        S, NS = dofile(MP.."/lib/intllib.lua")
+    else
+        S = function(str, ...)
+            local args={...}
+            return str:gsub("@%d+", function(match) return args[tonumber(match:sub(2))] end )
+        end
+    end
+end
 
 --
 -- Balrog's spawn settings
