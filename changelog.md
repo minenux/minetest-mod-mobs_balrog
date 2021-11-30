@@ -10,6 +10,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 	- No further addition planned.
 
 
+## [0.5.0] - 2021-11-27
+### Added
+
+	- backguard older compatibility on localization.
+	- improved information in the source, no shit of forums or contendb
+	- added spanish translation
+
+### Changed
+
+	- init.lua - error due mistake in prtection area integration
+          https://codeberg.org/minenux/minetest-mod-mobs_balrog/issues/3
+	- backguar compatibility with intllib for 0.4 minetest
+          https://codeberg.org/minenux/minetest-mod-mobs_balrog/issues/2
+
+
+
 ## [0.4.0] - 2019-10-16
 ### Added
 
