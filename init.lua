@@ -302,10 +302,11 @@ minetest.register_tool("mobs_balrog:balrog_whip", {
             local nodeu = minetest.get_node({x = new_pos.x, y = new_pos.y - 1, z = new_pos.z})
             local value = x * x + z * z
             if value <= radius * radius + 1
-            and node.name == "air" and nodeu.name ~= "air"
-            and not minetest.is_protected(new_pos, name) then
-               minetest.set_node(new_pos, {name = "fire:basic_flame"})
-               break
+            and node.name == "air" and nodeu.name ~= "air" then
+               if not minetest.is_protected(new_pos, user:get_player_name()) then
+                  minetest.set_node(new_pos, {name = "fire:basic_flame"})
+                  break
+               end
             end
          end
          end
