@@ -12,7 +12,7 @@ mobs_balrog_interval (Interval) int 60
 
 # Spawn chance, higher is less likely
 # Probabilita' di comparsa, maggiore e' e meno e' probabile
-mobs_balrog_chance (Chance) int 500000
+mobs_balrog_chance (Chance) int 50000
 
 # Max number of spawned barlogs
 # Numero massimo di balrog generati

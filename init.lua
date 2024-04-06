@@ -77,7 +77,7 @@ end
 
 local CHANCE = tonumber(minetest.settings:get("mobs_balrog_chance"))
 if (CHANCE == nil) then
-	CHANCE = 500000
+	CHANCE = 50000
 end
 
 local MAX_NUMBER = tonumber(minetest.settings:get("mobs_balrog_aoc"))
@@ -92,7 +92,7 @@ end
 
 local MAX_HEIGHT = tonumber(minetest.settings:get("mobs_balrog_max_height"))
 if (MAX_HEIGHT == nil) then
-	MAX_HEIGHT = -6000
+	MAX_HEIGHT = -1800
 end
 
 
@@ -131,6 +131,12 @@ if (PATH_FINDER == nil) then
 end
 
 
+local spawn_nodes = {"group:stone"}
+if minetest.get_modpath("nether") then 
+	spawn_nodes = {"nether:rack", "nether:rack_deep", "group:stone"}
+	CHANCE = 10000
+	MAX_HEIGHT = -8000
+end
 --
 -- Balrog entity
 --
@@ -359,7 +365,7 @@ minetest.register_tool("mobs_balrog:balrog_whip", {
 
 
 mobs:spawn({name = "mobs_balrog:balrog",
-	nodes = {"group:stone"},
+	nodes = spawn_nodes,
 	max_light = MAX_LIGHT,
 	min_light = MIN_LIGHT,
 	interval = INTERVAL,

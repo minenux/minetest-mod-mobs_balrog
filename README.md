@@ -14,8 +14,9 @@ for VenenuX minetest game, https://forum.minetest.net/viewtopic.php?f=11&t=18459
 
 ## Usage
 
-**Spawn chance**: 1 in half a million (twice the chance of being struck 
-by a lightning in real life) under -1500 on the ground
+**Spawn chance**: 1 en a thousand (same the chance of being struck 
+by a lightning in real life) under -1500 on the ground, but if nether then 
+will be 1 in half a thousand under -8000 on the ground.
 
 **Lowered stats**: HP range to a min of 200 to a max of 600; if you are 
 alone then you are dead, if you are in a party you might defeat it. 
