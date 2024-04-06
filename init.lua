@@ -92,7 +92,7 @@ end
 
 local MAX_HEIGHT = tonumber(minetest.settings:get("mobs_balrog_max_height"))
 if (MAX_HEIGHT == nil) then
-	MAX_HEIGHT = -1800
+	MAX_HEIGHT = -6000
 end
 
 
@@ -359,7 +359,7 @@ minetest.register_tool("mobs_balrog:balrog_whip", {
 
 
 mobs:spawn({name = "mobs_balrog:balrog",
-	nodes = {"group:cracky"},
+	nodes = {"group:stone"},
 	max_light = MAX_LIGHT,
 	min_light = MIN_LIGHT,
 	interval = INTERVAL,
