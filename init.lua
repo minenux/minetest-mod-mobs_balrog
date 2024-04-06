@@ -235,6 +235,7 @@ minetest.register_tool("mobs_balrog:balrog_whip", {
       minetest.get_background_escape_sequence("darkred"),
    inventory_image = "mobs_balrog_balrog_whip.png^[transform3",
    on_use = function(itemstack, user, pointed_thing)
+      if not user then return end
       if pointed_thing.type == "nothing" then
          local dir = user:get_look_dir()
          local pos = user:get_pos()
