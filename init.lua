@@ -150,7 +150,7 @@ mobs:register_mob("mobs_balrog:balrog", {
 	walk_velocity = 3.5,
 	run_velocity = 5.2,
 	walk_chance = WALK_CHANCE,
-	jump_height = 16,
+	jump_height = 14,
 	stepheight = 2.2,
 	view_range = VIEW_RANGE,
 	damage = DAMAGE,
