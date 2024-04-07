@@ -170,6 +170,7 @@ mobs:register_mob("mobs_balrog:balrog", {
 	pathfinding = PATH_FINDER,
 	makes_footstep_sound = true,
 	sounds = {
+		distance = VIEW_RANGE * 8,
 		war_cry = "mobs_balrog_howl",
 		death = "mobs_balrog_howl",
 		attack = "mobs_balrog_stone_death"
