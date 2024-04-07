@@ -102,7 +102,7 @@ end
 
 local MIN_HP = tonumber(minetest.settings:get("mobs_balrog_min_hp"))
 if (MIN_HP == nil) then
-	MIN_HP = 200
+	MIN_HP = 400
 end
 
 local MAX_HP = tonumber(minetest.settings:get("mobs_balrog_max_hp"))

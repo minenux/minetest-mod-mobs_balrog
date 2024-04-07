@@ -28,7 +28,7 @@ mobs_balrog_max_height (Max Height) int -1800
 
 # Min hit points
 # Punti salute minimi
-mobs_balrog_min_hp (Min HP) int 200
+mobs_balrog_min_hp (Min HP) int 400
 
 # Max hit points
 # Punti salute massimi
