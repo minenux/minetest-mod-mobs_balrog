@@ -1,4 +1,6 @@
 default
 tnt
+fire
 mobs
+nether?
 intllib?

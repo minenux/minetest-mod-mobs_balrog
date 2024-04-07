@@ -10,6 +10,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 	- No further addition planned.
 
 
+## [0.6.0] - 2024-03-30
+### Added
+
+	- detect nether and spawn into right nodes, more deep if and more chance
+
+### Changed
+
+	- prevent balrogs from spawning on trap nodes, using stone group
+	- make the balrog whip act as a wielded light source
+	- check user validation on use to avoid crash on disconected
+	- keep balrog whip drop from exploding with the balrog due lagfix
+	- improved information in the mod.conf, no shit of forums or contendb
+
+
+
 ## [0.5.0] - 2021-11-27
 ### Added
 
