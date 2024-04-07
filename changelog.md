@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 	- detect nether and spawn into right nodes, more deep if and more chance
+	- on die balrog will cause a great xplosion
 
 ### Changed
 

@@ -192,11 +192,11 @@ mobs:register_mob("mobs_balrog:balrog", {
       stand_end = 240,
       walk_start = 240,
       walk_end = 300,
-		walk_speed = 30,
-		run_speed = 45,
+		walk_speed = 35,
+		run_speed = 55,
       punch_start = 300,
       punch_end = 380,
-		punch_speed = 45,
+		punch_speed = 55,
 	},
 	on_die = function(self, pos)
 		self.object:remove()
@@ -204,7 +204,7 @@ mobs:register_mob("mobs_balrog:balrog", {
 		minetest.after(0.0, function()
 			-- This has been taken from ../tnt/init.lua @243
 			minetest.add_particlespawner({
-				amount = 128,
+				amount = 196,
 				time = 0.1,
 				minpos = vector.subtract(pos, 10 / 2),
 				maxpos = vector.add(pos, 10 / 2),
@@ -221,8 +221,8 @@ mobs:register_mob("mobs_balrog:balrog", {
 			})
 			tnt.boom(pos, {
 				name = "Balrog's Blast",
-				radius = 6,
-				damage_radius = 16,
+				radius = 36,
+				damage_radius = 26,
 				disable_drops = true,
 				ignore_protection = false,
 				ignore_on_blast = false,
@@ -386,15 +386,4 @@ mobs:register_egg("mobs_balrog:balrog",
 mobs:alias_mob("mobs:balrog", "mobs_balrog:balrog")
 
 
---
--- Minetest engine debug logging
---
-
-if (minetest.settings:get("debug_log_level") == nil)
-or (minetest.settings:get("debug_log_level") == "action")
-or	(minetest.settings:get("debug_log_level") == "info")
-or (minetest.settings:get("debug_log_level") == "verbose")
-then
-
-	minetest.log("action", "[Mod] Mobs Balrog [v0.4.0] loaded.")
-end
+print("[Mod] Mobs Balrog loaded.")
