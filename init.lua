@@ -204,7 +204,7 @@ mobs:register_mob("mobs_balrog:balrog", {
 		minetest.after(0.0, function()
 			-- This has been taken from ../tnt/init.lua @243
 			minetest.add_particlespawner({
-				amount = 196,
+				amount = 134,
 				time = 0.1,
 				minpos = vector.subtract(pos, 10 / 2),
 				maxpos = vector.add(pos, 10 / 2),
@@ -221,8 +221,8 @@ mobs:register_mob("mobs_balrog:balrog", {
 			})
 			tnt.boom(pos, {
 				name = "Balrog's Blast",
-				radius = 36,
-				damage_radius = 26,
+				radius = 14,
+				damage_radius = 50,
 				disable_drops = true,
 				ignore_protection = false,
 				ignore_on_blast = false,
