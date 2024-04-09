@@ -69,7 +69,14 @@ Changelog [changelog.md](changelog.md)
 ## License: 
 
 * **Source code's license:** [LGPL v2.1][1]  
+    * this code is based in the Hamlet one
 * **Media (Textures, Models, Sounds) license:** [CC-BY-SA 3.0 Unported][2]
+    * initially the balrog was created by STHGOM / sparky
+    * sound media files copyright BrandonReese
+    * STHGOM / sparky mobs_balrog_balrog.png
+* Copyright (CC0) creative commons zero
+    * LorNeo mobs_balrog_balrog_whip.png
+
 
 [1]: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
 [2]: https://creativecommons.org/licenses/by-sa/3.0/
