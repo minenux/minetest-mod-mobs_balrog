@@ -62,7 +62,7 @@ Changelog [changelog.md](changelog.md)
 
 ## Dependencies: 
 
-* tnt, default, from basic games, 
+* tnt, default, from basic games, `enable_tnt` if set to true balrog will explode in epic way
 * mobs (or so called mobs_redo)
 * intllib if you are using minetest 0.4 series and only optional
 

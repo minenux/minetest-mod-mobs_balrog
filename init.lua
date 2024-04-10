@@ -130,6 +130,7 @@ if (PATH_FINDER == nil) then
 	PATH_FINDER = 1
 end
 
+local enable_tnt = minetest.settings:get_bool("enable_tnt") or false
 
 local spawn_nodes = {"group:stone"}
 if minetest.get_modpath("nether") then 
@@ -219,15 +220,17 @@ mobs:register_mob("mobs_balrog:balrog", {
 				texture = "fire_basic_flame.png",
 				collisiondetection = true,
 			})
-			tnt.boom(pos, {
-				name = "Balrog's Blast",
-				radius = 14,
-				damage_radius = 50,
-				disable_drops = true,
-				ignore_protection = false,
-				ignore_on_blast = false,
-				tiles = {""},
-			})
+			if enable_tnt then
+				tnt.boom(pos, {
+					name = "Balrog's Blast",
+					radius = 14,
+					damage_radius = 50,
+					disable_drops = true,
+					ignore_protection = false,
+					ignore_on_blast = false,
+					tiles = {""},
+				})
+			end
 		end)
 	end,
 })
