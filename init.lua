@@ -130,7 +130,7 @@ if (PATH_FINDER == nil) then
 	PATH_FINDER = 1
 end
 
-local enable_tnt = minetest.settings:get_bool("enable_tnt") or false
+local enable_tnt = minetest.settings:get_bool("enable_tnt") or minetest.settings:get("enable_tnt") or false
 
 local spawn_nodes = {"group:stone"}
 if minetest.get_modpath("nether") then 
